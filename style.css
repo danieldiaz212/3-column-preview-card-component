@@ -51,8 +51,8 @@ body {
 }
 h2 {
   font-family: "Lexend Deca Thin";
-  font-weight: 100;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
 }
