@@ -1,0 +1,125 @@
+@font-face {
+  src: url("LexendDeca-VariableFont_wght.ttf");
+  src: url("BigShouldersDisplay-VariableFont_wght.ttf");
+  font-family: "Big Shoulders Display Thin";
+  font-family: "Lexend Deca Thin";
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 80vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#contenedor {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+#contenedor-sedan {
+  width: 300px;
+  height: 500px;
+  background-color: hsl(31, 77%, 52%);
+  padding: 3%;
+  border-radius: 10px 0 0 10px;
+}
+#contenedor-suvs {
+  width: 300px;
+  padding: 3%;
+  height: 500px;
+
+  background-color: hsl(184, 100%, 22%);
+}
+#contenedor-luxury {
+  width: 300px;
+  height: 500px;
+
+  padding: 3%;
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(179, 100%, 13%);
+}
+h2 {
+  font-family: "Lexend Deca Thin";
+  font-weight: 400;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+p {
+  text-align: left;
+  margin-right: 2%;
+  font-family: "Big Shoulders Display Thin", sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.boton {
+  font-family: "Big Shoulders Display Thin", sans-serif;
+  width: auto;
+  background-color: hsl(0, 0%, 95%);
+  margin: 5% auto;
+  margin-top: 30%;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  padding: 6% 15%;
+  transition: 1s ease-in;
+}
+
+#boton-sedan {
+  color: hsl(31, 77%, 52%);
+}
+#boton-suvs {
+  color: hsl(184, 100%, 22%);
+}
+#boton-luxury {
+  color: hsl(179, 100%, 13%);
+}
+.boton:hover {
+  background-color: hsla(0, 0%, 95%, 0);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  transition: 1s ease-in;
+}
+#boton-sedan:hover,
+#boton-suvs:hover,
+#boton-luxury:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (max-width: 375px) {
+  #contenedor {
+    position: relative;
+    flex-direction: column;
+    margin: 10% 2%;
+    width: auto;
+  }
+  #contenedor-sedan {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #contenedor-luxury {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10%;
+  }
+  #contenedor-sedan,
+  #contenedor-suvs,
+  #contenedor-luxury {
+    width: auto;
+    padding: 15%;
+  }
+  .boton {
+    margin-top: 10%;
+  }
+}
